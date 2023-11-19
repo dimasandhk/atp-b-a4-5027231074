@@ -15,10 +15,10 @@ void bubbleSort(int arr[], int n) {
     // One pass through the array
     for (int j = 0; j < n - i - 1; j++) {
       // Compare adjacent elements and swap if they are in the wrong order
+      compBubble++;
       if (arr[j] > arr[j + 1]) {
         swap(arr[j], arr[j + 1]);
         swapBubble++;
-        compBubble++;
         swapped = true; // Set the flag to true if a swap occurred
       }
     }
